@@ -14,8 +14,10 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
 var index = require('./routes/index');
+var venmo = require('./routes/venmo');
 
 app.get('/', index.view);
+app.get('/venmo', venmo.view);
 
 
 app.listen(app.get('port'), () => {
