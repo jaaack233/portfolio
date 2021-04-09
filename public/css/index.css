@@ -50,7 +50,7 @@ body {
     width: 100%;
     color: white;
     position: fixed;
-    background-color: black;
+    background-color: rgb(27, 75, 49);
     z-index: -1;
     top: 0;
     left: 0;
