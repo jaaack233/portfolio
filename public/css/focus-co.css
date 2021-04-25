@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+}
+
+body {
+    background-color: #F1F1F0;
+    margin: 0;
+}
+
+
+.container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 1rem;
+}
+
+p{
+    line-height: 35px;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.block img {
+    max-width: 40%;
+    max-height: 600px;
+}
+
+img{
+    display: block;
+    margin: auto;
+    height: auto;
+    width: 80%;
+}
+
+.navbar {
+    position: fixed;
+    background-color: #2C3642;
+    height: 45px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.navbar button{
+    float: right;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 0 0 5px 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: #DEE6F3;
+    color: black;
+}
+
+.navbar button:hover{
+    cursor: pointer;
+    background-color: rgb(169, 223, 54)
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.side-bar {
+    display: none;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.jumbo {
+    display: flex;
+    position: relative;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    margin-bottom: 30px;
+}
+
+.jumbo::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../image/venmo/venmo_bg.png');
+    background-size: cover;
+    opacity: 0.3;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+b {
+    font-size: 20px;
+}
+
+ul {
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+h2 {
+    color: white;
+    background-color: #2C3642;
+    padding-left: 20px;
+}
+
+.sec-intro {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+}

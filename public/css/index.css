@@ -4,24 +4,23 @@
 }
 
 body {
-    background-color: rgba(210, 238, 194);
+    background-color: white;
 
 }
 
 .container {
-    width: 80%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .navbar {
-    position: relative;
-    background-color: #f07e14c0;
+    position: fixed;
+    background-color: #2C3642;
     height: 45px;
     top: 0;
     left: 0;
     width: 100%;
-    backdrop-filter: blur(4px);
 }
 
 .navbar button{
@@ -32,8 +31,8 @@ body {
     border-radius: 0 0 5px 5px;
     margin-left: 2px;
     margin-right: 2px;
-    background-color: #0f765a;
-    color: white;
+    background-color: #DEE6F3;
+    color: black;
 }
 
 .navbar button:hover{
@@ -41,6 +40,11 @@ body {
     background-color: rgb(169, 223, 54)
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
 
 
 .intro {
@@ -50,39 +54,44 @@ body {
     width: 100%;
     color: white;
     position: fixed;
-    background-color: rgb(27, 75, 49);
+    background-color: #2C3642;
     z-index: -1;
     top: 0;
     left: 0;
 }
 
-.intro div {
-    width: 50%;
-    text-align: center;
+.intro p{
+    font-size: 20px;
 }
 
 .sec-uiux {
     margin-top: 100vh;
-    background-color: rgba(210, 238, 194);
+    background-color: #f1f1f0;
     border-radius: 15px;
-    box-shadow: 0px -2px 10px rgb(102, 98, 98);
     padding-bottom: 50px;
 }
 
 .sec-web {
-    background-color: rgb(169, 223, 54, 0.5);
+    background-color: black;
     border-radius: 15px;
     padding-bottom: 50px;
 }
 
 .project {
+    padding: 20px;
     display: flex;
-    height: 50vh;
+    height: 40vh;
     margin-top: 30px;
     margin-bottom: 30px;
-    border-radius: 50px;
-    border-left: 4px solid #F07F14;
-    border-right: 4px solid #F07F14;
+    border-radius: 20px;
+    transition: 0.3s;
+    box-shadow: rgb(0,0,0,0.5) 2px 2px 20px;
+    justify-content: center;
+}
+
+.project:hover {
+    background-color: black;
+    color: white;
 }
 
 .img-container {
@@ -92,15 +101,12 @@ body {
 img {
     width: 100%;
     height: 100%;
-    border-radius: 10%;
+    object-fit: cover;
+    border-radius: 20px;
     transition: 0.3s;
+    
 }
 
-img:hover {
-    box-shadow: rgb(169, 223, 54) 10px 10px 10px;
-    width: 98%;
-    height: 98%;
-}
 
 .p-intro {
     display: flex;
@@ -114,14 +120,15 @@ img:hover {
 
 .sec-title {
     font-size: 50px;
-    background-color: #F2B28C;
+    color: white;
+    background-color: #5C6C76;
     border-radius: 0 0 15px 15px;
     width: 20%;
     text-align: center;
 }
 
 .btn-exp {
-    background-color: #0f765a;
+    background-color: #5C6C76;
     border: none;
     border-radius: 10px;
     width: 150px;
@@ -132,8 +139,23 @@ img:hover {
 
 .btn-exp:hover {
     cursor: pointer;
-    background-color: #F07F14;
-    color: white
+    background-color: rgb(169, 223, 54);
+    color: black;
+}
+
+#a {
+    color: red;
+    font-size: 40px;
+}
+
+#b {
+    color: orange;
+    font-size: 40px;
+}
+
+#c {
+    color: yellow;
+    font-size: 40px;
 }
 
 @media only screen and (max-width: 400px){
