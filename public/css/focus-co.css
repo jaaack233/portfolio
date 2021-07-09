@@ -5,6 +5,8 @@
 body {
     background-color: #F1F1F0;
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
 }
 
 
@@ -24,8 +26,9 @@ body {
 p{
     line-height: 35px;
     padding: 30px;
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 0px;
+    
 }
 
 .block img {
@@ -38,6 +41,7 @@ img{
     margin: auto;
     height: auto;
     width: 80%;
+    margin-bottom: 20px;
 }
 
 .navbar {
@@ -107,7 +111,7 @@ a {
 }
 
 b {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 ul {
@@ -116,10 +120,14 @@ ul {
     font-size: 25px;
 }
 
+h1 {
+    color: orange;
+}
+
 h2 {
     color: white;
     background-color: #2C3642;
-    padding-left: 20px;
+    padding-left: 25px;
 }
 
 .sec-intro {
@@ -138,4 +146,20 @@ ol {
 
 span {
     background-color: skyblue;
+}
+
+.btn1 {
+    padding: 5px;
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 35px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.btn1:hover {
+    background-color: orange;
+    cursor: pointer;
 }
