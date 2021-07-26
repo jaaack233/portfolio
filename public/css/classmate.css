@@ -28,6 +28,7 @@ p{
     padding: 30px;
     font-size: 25px;
     margin-top: 0px;
+    margin-bottom: 0;
     
 }
 
@@ -121,14 +122,14 @@ ul {
 }
 
 h1 {
-    color: orange;
-    font-weight: 500;
+    color: rgb(246, 122, 132);
+    font-weight: 600;
 }
 
 h2 {
-    color: white;
-    background-color: #2C3642;
-    padding-left: 25px;
+    color: cornflowerblue;
+    font-weight: 400;
+    margin-top: 0;
 }
 
 .sec-intro {
