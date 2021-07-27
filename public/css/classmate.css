@@ -18,9 +18,7 @@ body {
 
 .block {
     display: flex;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    font-size: 1rem;
+    flex-direction: row;
 }
 
 p{
@@ -33,8 +31,7 @@ p{
 }
 
 .block img {
-    max-width: 40%;
-    max-height: 600px;
+    width: 100%;
 }
 
 img{
@@ -113,6 +110,7 @@ a {
 
 b {
     font-size: 25px;
+    font-weight: 600;
 }
 
 ul {
@@ -146,9 +144,6 @@ ol {
     margin-left: 100px;
 }
 
-span {
-    background-color: skyblue;
-}
 
 .btn1 {
     padding: 5px;
