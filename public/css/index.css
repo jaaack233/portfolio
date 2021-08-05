@@ -84,9 +84,10 @@ a {
     margin-top: 30px;
     margin-bottom: 30px;
     border-radius: 20px;
-    transition: 0.3s;
-    box-shadow: rgb(0,0,0,0.5) 2px 2px 20px;
+    box-shadow: 10px 10px 20px rgb(0,0,0,0.2),
+    -10px -10px 20px white;
     justify-content: center;
+    background-image: linear-gradient(-45deg, rgb(204, 204, 204),#f1f1f0);
 }
 
 .project p{
@@ -95,8 +96,8 @@ a {
 }
 
 .project:hover {
-    background-color: black;
-    color: white;
+    box-shadow: 10px 10px 20px rgb(0,0,0,0.2) inset,
+    -10px -10px 20px white inset;
 }
 
 .img-container {
@@ -130,6 +131,7 @@ img {
     border-radius: 0 0 15px 15px;
     width: 20%;
     text-align: center;
+    box-shadow: rgb(0,0,0,0.2) 10px 10px 20px;
 }
 
 .btn-exp {
