@@ -24,7 +24,7 @@ body {
 
 p{
     line-height: 35px;
-    padding: 30px;
+    padding: 15px;
     padding-bottom: 0;
     font-size: 20px;
     margin-top: 0px;
@@ -163,4 +163,13 @@ ol {
 .btn1:hover {
     background-color: orange;
     cursor: pointer;
+}
+
+.card {
+    width: 33%; 
+    padding: 10px;
+}
+
+.card:hover {
+    background-color: rgb(69, 76, 116);
 }
