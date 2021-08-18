@@ -17,11 +17,13 @@ var index = require('./routes/index');
 var venmo = require('./routes/venmo');
 var focus = require('./routes/focus');
 var classmate = require('./routes/classmate');
+var mcdonald = require('./routes/mcdonald')
 
 app.get('/', index.view);
 app.get('/venmo', venmo.view);
 app.get('/focus-co', focus.view);
 app.get('/classmate', classmate.view);
+app.get('/mcdonald', mcdonald.view);
 
 app.listen(app.get('port'), () => {
     console.log('Express server listening on port ' + app.get('port'));
