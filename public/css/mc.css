@@ -42,7 +42,10 @@ img{
     height: auto;
     width: 80%;
     margin-bottom: 20px;
+<<<<<<< HEAD
     border-radius: 15px;
+=======
+>>>>>>> f1c92ec09c94b2875a9e09b59d9bf4f4596bc7c5
 }
 
 .navbar {
@@ -90,12 +93,20 @@ a {
 .jumbo {
     display: flex;
     position: relative;
+<<<<<<< HEAD
     align-items: center;
     justify-content: center;
     z-index: 0;
     background: url('../image/mc.png');
     padding-top: 20px;
     padding-bottom: 30px;
+=======
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    margin-bottom: 30px;
+>>>>>>> f1c92ec09c94b2875a9e09b59d9bf4f4596bc7c5
 }
 
 .jumbo::before {
@@ -104,15 +115,25 @@ a {
     position: absolute;
     top: 0;
     left: 0;
+<<<<<<< HEAD
     background-color: rgb(0, 0, 0, 0.4);
     background-size: cover;
+=======
+    background: url('../image/venmo/venmo_bg.png');
+    background-size: cover;
+    opacity: 0.3;
+>>>>>>> f1c92ec09c94b2875a9e09b59d9bf4f4596bc7c5
     height: 100%;
     width: 100%;
     z-index: -1;
 }
 
 b {
+<<<<<<< HEAD
     font-size: 23px;
+=======
+    font-size: 25px;
+>>>>>>> f1c92ec09c94b2875a9e09b59d9bf4f4596bc7c5
     font-weight: 600;
 }
 
@@ -129,7 +150,11 @@ h1 {
 }
 
 h2 {
+<<<<<<< HEAD
     color: rgb(255, 157, 0);
+=======
+    color: cornflowerblue;
+>>>>>>> f1c92ec09c94b2875a9e09b59d9bf4f4596bc7c5
     font-weight: 400;
     margin-top: 30px;
     margin-bottom: 0;
