@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+
+}
+
+.container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    background-color: #2C3642;
+    height: 45px;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar button{
+    float: right;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 0 0 5px 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: #DEE6F3;
+    color: black;
+}
+
+.navbar button:hover{
+    cursor: pointer;
+    background-color: rgb(169, 223, 54)
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.intro {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    position: fixed;
+    background-color: #2C3642;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+
+
+.footer {
+    background-color: #2C3642;
+    height: 200px;
+}
+
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.3s;
+    
+}
+
+
+.p-intro {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.sec-title {
+    font-size: 50px;
+    color: white;
+    background-color: #5C6C76;
+    border-radius: 0 0 15px 15px;
+    width: 20%;
+    text-align: center;
+    box-shadow: rgb(0,0,0,0.2) 10px 10px 20px;
+}
+
+.btn-exp {
+    background-color: #5C6C76;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    margin-top: 50px;
+    color: white;
+}
+
+.btn-exp:hover {
+    cursor: pointer;
+    background-color: rgb(169, 223, 54);
+    color: black;
+}
+
+
+@media only screen and (max-width: 400px){
+
+    .container {
+        width: 98%;
+    }
+
+    .project {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+    }
+
+    .img-container {
+        width: 95%;
+        height: 250px;
+    }
+
+    .p-intro {
+        padding: 0;
+        width: 95%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #venmo {
+        flex-direction: column-reverse;
+    }
+
+    .btn-exp {   
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .sec-title {
+        font-size: 40px;
+        width: 60%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
