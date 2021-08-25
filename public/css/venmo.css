@@ -147,3 +147,24 @@ h2 {
 .card:hover {
     background-color: rgb(69, 76, 116);
 }
+
+#linkedin {
+    width: 80px;
+    position: relative;
+}
+
+#in-container {
+    position: relative;
+    text-align: center;
+}
+
+#in-container::before {
+    top: 10px;
+    left: 45px;
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    z-index: 0;
+}

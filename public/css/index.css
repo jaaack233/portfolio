@@ -170,6 +170,29 @@ img {
     font-size: 40px;
 }
 
+#linkedin {
+    width: 80px;
+    position: relative;
+}
+
+#in-container {
+    position: relative;
+    text-align: center;
+    margin-left: 20px;
+}
+
+#in-container::before {
+    top: 10px;
+    left: 10px;
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    z-index: 0;
+}
+
+
 @media only screen and (max-width: 400px){
 
     .container {
