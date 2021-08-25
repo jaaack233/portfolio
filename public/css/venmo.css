@@ -151,6 +151,7 @@ h2 {
 #linkedin {
     width: 80px;
     position: relative;
+    margin-bottom: 0;
 }
 
 #in-container {
