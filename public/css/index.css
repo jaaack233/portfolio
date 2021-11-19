@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: black;
 
 }
 
@@ -16,7 +16,8 @@ body {
 
 .navbar {
     position: fixed;
-    background-color: #2C3642;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
     height: 45px;
     top: 0;
     left: 0;
@@ -25,19 +26,18 @@ body {
 
 .navbar button{
     float: right;
-    height: 40px;
+    height: 45px;
     width: 100px;
     border: none;
-    border-radius: 0 0 5px 5px;
     margin-left: 2px;
     margin-right: 2px;
-    background-color: #DEE6F3;
-    color: black;
+    background-color: inherit;
+    color: white;
 }
 
 .navbar button:hover{
     cursor: pointer;
-    background-color: rgb(169, 223, 54)
+    color: #509a80
 }
 
 a {
@@ -53,22 +53,34 @@ a {
     height: 100vh;
     width: 100%;
     color: white;
-    position: fixed;
-    background-color: #2C3642;
+    position: relative;
+    background-color: #1a1f25;
     z-index: -1;
     top: 0;
     left: 0;
 }
 
-.intro p{
-    font-size: 20px;
+.intro::before {
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    content: "Hi I'm Jack, a 4th year Cognitive Science: HCI student at UC San Diego";
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .sec-uiux {
-    margin-top: 100vh;
-    background-color: #f1f1f0;
-    border-radius: 15px;
-    padding-bottom: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    margin-top: 0;
+    background-color: #1a1f25;
+    padding-bottom: 100px;
 }
 
 .footer {
@@ -77,16 +89,20 @@ a {
 }
 
 .project {
-    padding: 20px;
-    display: flex;
+    width: 40%;
     height: 40vh;
+    margin-left: 5%;
     margin-top: 30px;
     margin-bottom: 30px;
-    border-radius: 20px;
-    box-shadow: 10px 10px 20px rgb(0,0,0,0.2),
-    -10px -10px 20px white;
     justify-content: center;
-    
+    border-right: 0.5px inset rgba(255, 255, 255, 0.3);
+    border-bottom: 0.5px inset rgba(255, 255, 255, 0.3);
+    /* background: linear-gradient(135deg, #1a1f25, #1d2229, #242b33, #2d3540, #353e4a, #38424f); */
+    transition: 0.8s;
+}
+
+.project:hover {
+    background-color: #509a80;
 }
 
 .project p{
@@ -94,44 +110,38 @@ a {
     font-size: 20px;
 }
 
-.project:hover {
-    box-shadow: 10px 10px 20px rgb(0,0,0,0.2) inset,
-    -10px -10px 20px white inset;
-    background-image: linear-gradient(-45deg, rgb(204, 204, 204),#f1f1f0);
+.project h1{
+    color: white;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
+
 .img-container {
-    width: 50%;
+    height: 80%;
 }
 
 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 20px;
     transition: 0.3s;
     
 }
 
 
 .p-intro {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+    
 }
 
 .sec-title {
-    font-size: 50px;
+    padding-top: 50px;
+    font-size: 40px;
     color: white;
-    background-color: #5C6C76;
-    border-radius: 0 0 15px 15px;
-    width: 20%;
     text-align: center;
-    box-shadow: rgb(0,0,0,0.2) 10px 10px 20px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px #509a80;
 }
 
 .btn-exp {
@@ -150,25 +160,37 @@ img {
     color: black;
 }
 
-#a {
-    color: red;
-    font-size: 40px;
+#title_1 {
+    color: #1a1f25;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 200px;
+    text-shadow: -2px -2px #509a80,
+    -2px 2px #509a80,
+    2px -2px #509a80,
+    2px 2px #509a80;
 }
 
-#b {
-    color: orange;
-    font-size: 40px;
+#title_2 {
+    color: #1a1f25;
+    font-size: 200px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: -2px -2px #509a80,
+    -2px 2px #509a80,
+    2px -2px #509a80,
+    2px 2px #509a80;
 }
 
-#c {
-    color: yellow;
-    font-size: 40px;
+#title_3 {
+    color: #1a1f25;
+    font-size: 200px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: -2px -2px #509a80,
+    -2px 2px #509a80,
+    2px -2px #509a80,
+    2px 2px #509a80;
 }
 
-#d {
-    color: yellowgreen;
-    font-size: 40px;
-}
+
 
 #linkedin {
     width: 80px;
