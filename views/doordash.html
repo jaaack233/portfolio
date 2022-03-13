@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoorDash</title>
+
+    <link rel="stylesheet" href="css/doordash.css">
+</head>
+
+<body>
+    <div class='navbar'>
+        <div class="container">
+            <a href="/"><img style="width:90px; padding-top: 2px; display: inline;" src="image/LOGO.png" alt=""></a>
+            <a
+                href="https://drive.google.com/file/d/11UIpG9aC7v2hlo9I9wS1BuvVm5ALbCr4/view?usp=sharing"><button>RESUME</button></a>
+            <a href="/about"><button>ABOUT</button></a>
+            <a href="/"><button>WORK</button></a>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top: 100px; font-size: 20px;">
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 50%; justify-content: center;">
+                <h1 style="margin-top: 0;">Overview</h1>
+                <div style="display: flex; flex-direction: row;">
+                    <div style="width: 50%;"><b>Team members:</b></div>
+                    <div style="width: 50%;">
+                        <div>Leslie Aguiar</div>
+                        <div>Jiadong Chen</div>
+                        <div>Teng Wong</div>
+                        <div>Wanting Yang</div>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-direction: row; margin-top: 20px;">
+                    <div style="width: 50%;"><b>Role:</b></div>
+                    <div style="width: 50%;">
+                        UIUX Designer
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-direction: row; margin-top: 20px;">
+                    <div style="width: 50%;"><b>Time:</b></div>
+                    <div style="width: 50%;">
+                        2022.1 - 2022.3 (10 weeks)
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-direction: row; margin-top: 20px;">
+                    <div style="width: 50%;"><b>About This Project:</b></div>
+                    <div style="width: 50%;">
+                        This is a class project for UCSD COGS127 data driven ux design.
+                    </div>
+                </div>
+
+
+            </div>
+            <div style="width: 70%;">
+                <img src="image/doordash/ddlogo.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color: rgb(219, 234, 246); padding-top: 20px; padding-bottom: 20px; margin-top: 40px;">
+        <div class="container">
+            <h1>How we started</h1>
+            <p>
+                Since the outbreak of COVID-19, a lot of consumers have started to choose DoorDash and similar food
+                delivery services. Their “no-contact” delivery service helped with the pandemic situation to make users
+                feel more secure while accessing the wide variety of food in local restaurants. Generally, users can use
+                Doordash to order foods from local restaurants, buy groceries online, and they even provide retail
+                shopping services. As there are more users choosing the online delivery service, our team is interested
+                in discovering the problems in the user experience of using such mobile apps; we chose Doordash
+                specifically, because we want to improve it based on our personal experience compared to its other
+                competitors.
+            </p>
+            <h2>Story 1</h1>
+                <p>
+                    One of our teammates was very disappointed with a dinner order. It was 8 PM in the evening and she’s
+                    waiting for the dasher to deliver her order and the dasher called her to pick up the food. However,
+                    the
+                    dasher gave the food to the wrong person and left. The dinner was worth 70 dollars, and she had to
+                    contact customer service. The customer service was not able to contact the dasher. In the end, the
+                    Doordash customer service had to reorder the same food items again for her and she waited another
+                    hour.
+                </p>
+                <h2>Story 2</h2>
+                <p style="margin-bottom: 40px;">
+                    I once used the grocery shopping feature of DoorDash and I ordered many heavy groceries. Consider
+                    the
+                    weight of the order, I gave a lot tip to the dasher. However, due to the faliure of the app, the
+                    dasher
+                    was not able to replace items that were out of stock. It turned out only a few groceries were
+                    delivered
+                    to me and I regret for that amount of tip.
+                </p>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h1>How's our peers' experience with DoorDash?</h1>
+        <p>
+            Due to the short amount of time we have for this project and pandemic, the primary source of data we
+            collected
+            are all from our peers who are aged around 18-25. Most of these users don’t use DoorDash very often but have
+            used it regardless. Most users described using DoorDash for specifically food delivery services and a small
+            amount for grocery service. We found that 25% of our survey respondents described encountering in-app issues
+            when utilizing DoorDash. We specified in-app issues as being ‘lack of function’ and ‘confusion’. We gave
+            respondents a place to describe these issues in the next question and we found that many had ‘app crashes’
+            and “promo offer bugs” while using DoorDash. When asking about dasher experiences, some users experienced
+            wrong deliveries, incorrect orders, and missing items. Although some of these issues are system issues,
+            there are ways to facilitate that these issues don’t happen through the app.
+        </p>
+
+        <img src="image/doordash/picture1.png" alt="" style="width: 70%;margin-top: 30px;">
+        <h2>Possible Pain Points Summarized from Result:</h2>
+        <div style="display: flex;">
+            <div style="width: 50%;">
+                <ul>
+                    <li style="color: red;">Dasher mess up orders and takes no responsibility</li>
+                    <li>No menu search when ordring food</li>
+                    <li style="color: red;">Can't find customer service</li>
+                    <li>Homepage functions confusing</li>
+                </ul>
+            </div>
+            <div style="width: 50%; display: flex; flex-direction: column; justify-content: center;">
+                <div style="justify-content: center;">
+                    <p style="text-align: center;">
+                        Due to the limit of time we have for this project, we will be focusing on the most significant
+                        issues,
+                        which are highlighted in <b style="color: red;">red</b>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Personas</h2>
+        <div class="block">
+            <div style="width: 50%;">
+                <img src="image/doordash/persona1.png" alt="">
+            </div>
+            <div style="width: 50%;">
+                <img src="image/doordash/persona2.png" alt="">
+            </div>
+        </div>
+
+        <div style="background-color: lightsteelblue; padding: 10px; margin-top: 30px;">
+            <h2 style="margin-top: 10px;">Problem Satement:</h2>
+            <p><b>How might we give DoorDash users more control of their food’s delivery process by improving the
+                    dasher’s to
+                    user communication to make their food delivery service accurate? </b></p>
+        </div>
+
+
+        <h1>User Flow</h1>
+        <img src="image/doordash/flow.png" alt="" style="width: 100%;">
+
+        <h1>UI Sketch</h1>
+        <h2 style="text-align: center;">After-service</h2>
+        <div class="block">
+            <div style="width: 60%;">
+                <img src="image/doordash/sketch1.png" alt="">
+            </div>
+            <div style="width: 40%; justify-content: center;">
+                <div>
+                    <p style="text-align: center;">
+                        Starting from screen 5, when dasher confirms the order delivery on their app, user will receive
+                        a
+                        notification saying that the dasher has confirmed the delivery and also asks if the user has
+                        received the food. If the user hit “YES,” they will be directed to screen 6 to rate the
+                        restaurant
+                        and dasher, or report any issues they’ve met; they’re also offered a second chance to tip the
+                        dasher
+                        if they feel like tipping the dasher again. If the user didn’t receive the food, they will be
+                        directed to screen 8, the dasher’s number will be provided again for users to call and check
+                        order
+                        status. At this point, if they cannot contact the dasher, they can directly call customer
+                        service
+                        immediately in the same page. <b> This check-in screens may reduce users’ frustrations when they
+                            find
+                            out they haven’t received their food but the dasher already confirmed delivery; it will also
+                            help
+                            users to thank their dashers after the delivery and dashers could be potentially rewarded
+                            more tips
+                            from after-tipping functionality.</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h2 style="text-align: center;">Rating</h2>
+        <div class="block">
+            <div style="width: 60%;">
+                <img src="image/doordash/sketch2.jpg" alt="">
+            </div>
+            <div
+                style="width: 40%; justify-content: center; display: flex; flex-direction: column; justify-content: center;">
+                <div style="justify-content: center;">
+                    <p style="text-align: center;">
+                        <b>
+                            These sketches show more user centered after delivery process. The user is able to describe
+                            whether something went wrong and is able to confirm they have received the order, it does
+                            not
+                            rely solely on the dasher.
+                        </b>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h1>Low-Fi Prototype</h1>
+        <h2>Version A</h2>
+        <div class="block">
+            <div style="width: 60%;">
+                <img src="image/doordash/lofi1.png" alt="" style="width: 80%;">
+            </div>
+            <div
+                style="width: 40%; justify-content: center; display: flex; flex-direction: column; justify-content: center;">
+                <div style="justify-content: center;">
+                    <p style="text-align: center;">
+
+                        This is our first prototype. It starts off with the order summary/progress and there’s
+                        options to call and text dasher and an option state when you receive your order. After you
+                        click “order received”, it prompts you to an after experience questionnaire asking your
+                        experience on order and dasher, a space to give an additional tip, and if there were any
+                        issues with their order. Each of the other screens pertain to the issues that the user
+                        experienced. <b>This resolves some communication issues because there is a double confirmation
+                            barrier where order delivery is not only one sided towards the driver, it is now also the
+                            user confirming that everything went smoothly.</b> If it did not go smoothly, the user is
+                        able
+                        to communicate which aspect did not go well.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Version B</h2>
+        <div class="block">
+            <div style="width: 60%;">
+                <img src="image/doordash/lofi2.png" alt="" style="width: 80%;">
+            </div>
+            <div
+                style="width: 40%; justify-content: center; display: flex; flex-direction: column; justify-content: center;">
+                <div style="justify-content: center;">
+                    <p style="text-align: center;">
+                        This prototype focuses on having a double check window for the user when the dasher delivers the
+                        food. This is designed to prevent the errors or any mistakes the dasher may have, such as
+                        delivering the food to another place, the users can call them right away instead of going back
+                        and forth with customer service. Compared to the first prototype, this prototype focuses on the
+                        delivery process more instead of rating. As you can see in order page 2 and 5, users can declare
+                        if they have physically received the food after the dasher delivers the food. If they choose
+                        “yes,” they will be directed to the the rating page and they get to choose to tip the dashers
+                        after the service ends. The goal of this prototype is to make users more comfortable with
+                        knowing where the food is at. As in our user research, there are examples of dashers sending the
+                        food to somewhere else or the food is never delivered. The check-in window (order page 2) should
+                        make users to get their food much more quickly and it prevents the Dasher’s mistakes.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h1>First Round User Testing</h1>
+        <p>
+            We invite 4 volunteers to experience through 2 prototypes and complete tasks we designed to test the
+            functionality of the prototypes.
+        </p>
+        <div class="block">
+            <div>
+                <h2
+                    style="color: white; background-color: green; width: fit-content; padding: 10px; border-radius: 5px;">
+                    What went well</h2>
+                <ul>
+                    <li>Users liked the “order confirmation” feature and they think it’s really helpful</li>
+                    <li>Users also resonated with the “tipping after” feature, as they think it makes more sense to tip
+                        after the dasher delivers the food.</li>
+                    <li>
+                        They all think the prototypes perform a better job compared to original Doordash in after
+                        service flows
+                    </li>
+                    <li>The order overview with car information is helpful.</li>
+                    <li>More detailed branch while rating the order.</li>
+                </ul>
+            </div>
+            <div>
+                <h2
+                    style="color: white; background-color: tomato; width: fit-content; padding: 10px; border-radius: 5px;">
+                    What need to be improved</h2>
+                <ul>
+                    <li>We could combine the good flow of prototype A and the innovative features of Prototype B</li>
+                    <li>Refine the flow of prototype B since one user is confused about the location of pop up delivery
+                        confirmation.</li>
+                    <li>Refine the UI, make buttons larger and the chat bubble more obvious.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <h2 style="margin-bottom: 30px;">Refined Prototype</h2>
+            <img src="image/doordash/prototype3.png" alt="">
+            <p>For our new prototype we combined our first and second prototype and also changed a few features. Now,
+                when a
+                user indicates that they haven’t received their order, they will be shown the map of the dashers
+                location
+                where they indicated it’s been delivered (labeled as No- 1) along with the contact information and
+                customer
+                service. If they end up finding the order and/or confirm their order, they are directed to the survey.
+                This
+                survey could be after they realize something is wrong with the order just in case they didn’t get to
+                tell
+                the Dasher when they had the opportunity. We decided to get rid of the “service” issue due to a lot of
+                confusion in our first round of user testing.</p>
+        </div>
+
+        <h1>Hi-Fi Prototype</h1>
+        <div style="margin-top: 30px;">
+            <h2 style="margin-bottom: 30px; text-align: center;">Order Arrive(Didn't receive)</h2>
+            <img src="image/doordash/hifi1.png" alt="">
+        </div>
+        <div style="margin-top: 30px;">
+            <h2 style="margin-bottom: 30px; text-align: center;">Order Arrive -> Rating</h2>
+            <img src="image/doordash/hifi2.png" alt="">
+        </div>
+
+        <h2 style="margin-bottom: 30px; text-align: center;">Rating(Alternative)</h2>
+        <div class="block">
+            <div style="width: 40%;">
+                <img src="image/doordash/hifi3.png" alt="">
+            </div>
+            <div style="width: 60%; display: flex; flex-direction: column; justify-content: center;">
+                <div>
+                    <p style="text-align: center; padding: 50px;">
+                        This alternative version allows users to provide immediate feedback after receiving the
+                        order. Compared to the one obove, it doesn’t have a report issue section, and it may better
+                        motivates
+                        users to submit their feedback. It also gives has an avatar image for both dasher and the
+                        restaurant
+                        to make the reviewing process better recalled. Reviewing for dashers will be easier as the main
+                        points were summarized in bubbles and users can also slide the bar to adjust the after-tipping
+                        or
+                        customizing amounts of tips. For the restaurant’s review, users can view what they ordered from
+                        the
+                        restaurant and choose “likes” or “dislikes” for the items they ordered.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 30px;">
+            <h2 style="margin-bottom: 30px; text-align: center;">Help & Customer Service</h2>
+            <img src="image/doordash/hifi4.png" alt="" style="width: 50%;">
+        </div>
+
+        <h1>Second Round User Testing</h1>
+        <div class="block">
+            <div>
+                <h2
+                    style="color: white; background-color: green; width: fit-content; padding: 10px; border-radius: 5px;">
+                    What went well</h2>
+                <ul>
+                    <li>They liked the alternative way of separating restaurant and dasher ratings and comments</li>
+                    <li>They liked that there was an option for positive comments and not just reporting issues</li>
+                </ul>
+            </div>
+            <div>
+                <h2
+                    style="color: white; background-color: tomato; width: fit-content; padding: 10px; border-radius: 5px;">
+                    Issues</h2>
+                <ul>
+                    <li>The wording “Order Experience” on the rating screen was not clear or specific enough to know
+                        what exactly they were rating. </li>
+                    <li>
+                        The alternative was a bit more personal with the dasher picture and name
+                    </li>
+                    <li>they are rating and tipping their experience before they are able to report issues. This can
+                        cause the user to be biased and not give good ratings</li>
+                    <li>UI Style not following original design system</li>
+                    <li>Rating page too long</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 style="color: white; background-color: rgb(67, 147, 244); width: fit-content; padding: 10px; border-radius: 5px;">
+            Solution</h2>
+        <p style="text-align:center">Taking in all this feedback, we overall decided to combine our original and alternative rating screen (seen
+            in first before and after). We took out the “report issues” section and integrated it into their own
+            respective section within their rating screen. To do that, we had to have different screens for both
+            restaurant rating and dasher rating. In addition, some users liked how the alternative had sections for
+            positive feedback that the original did not have, so we added spots where users are able to express what
+            went right. Similar to the DoorDash app at the moment, when a user rates the dasher, different options and
+            feedback will appear depending on the amount of stars.</p>
+
+        <h1>Fianl Design & Iterations</h1>
+        <div class="block">
+            <div style="width: 25%;">
+                <img src="image/doordash/1.gif" alt="">
+            </div>
+            <div style="width: 25%; text-align: center;">
+                <h2>Order not received</h2>
+                <p>If the user didn't receive the order, he will be directed to a page to contact the dasher or customer
+                    serive. Unlike the current DoorDash design where user cannot reach dasher once the order is completed
+                    by the dasher.
+                </p>
+                <p>Once the dasher delivered the order, user can click on the confirm button to proceed to rating.</p>
+            </div>
+            <div style="width: 25%;">
+                <img src="image/doordash/2.gif" alt="">
+            </div>
+            <div style="width: 25%; text-align: center;">
+                <h2>Rating</h2>
+                <p>The rating process is divided into 2 screens. Each screen combines comments and issue reporting that
+                    the user don't need to find customer serivce after rating. The operation time for this rating is longer
+                    than the current design but will be more detailed to improve communication.
+                </p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="https://www.figma.com/proto/bprjdwSIiUobhpFidlzuRS/COGS-127?node-id=275%3A10579&scaling=scale-down&page-id=274%3A10281&starting-point-node-id=275%3A10579">
+                <button style="width: fit-content; height: 50px; font-size: 25px; padding: 10px; border-radius: 5px; background: rgb(213, 36, 36); color: white;">Try it by your self!</button>
+                </a>
+        </div>
+
+        <div style="margin-top: 50px;">
+            <img src="image/doordash/ite1.png" alt="">
+            <img src="image/doordash/ite2.png" alt="">
+        </div>
+       
+        
+        
+
+    </div>
+
+
+
+    <div style="background-color: rgb(219, 234, 246); padding-top: 20px; padding-bottom: 20px; margin-top: 40px;">
+        <div class="container">
+            <h1>You may also want to check ...</h1>
+            <div class="block">
+                <div class="card">
+                    <a href="/focus-co">
+                        <img style="width: 100%;" src="image/SLIDER.jpg" alt="">
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="/venmo">
+                        <img style="width: 100%;" src="image/venmo/venmo.jpg" alt="">
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="/focus-co">
+                        <img src="image/mc.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+
+    <div style="background-color: #2C3642;">
+        <div class="container">
+            <div style="display: flex; align-items: center; padding-top: 70px; padding-bottom: 70px;">
+                <div style="text-align: left; width: 100%;">
+                    <p style="color: white; font-size: 20px; text-align: left; margin-top: auto; margin-bottom: auto;">
+                        Designed & Made with <span style="color: orange; background-color: transparent;">passion</span>
+                        & <span style="color: red; background-color: transparent;">love</span> by Jack Chen
+                    </p>
+                </div>
+                <div style="width: 100px">
+                    <a href="jic006@ucsd.edu"><img style="width: 100px; float: right; margin-bottom: 0px;"
+                            src="image/icon-mail.png" alt=""></a>
+                </div>
+                <div style="width: 80px">
+                    <div id="in-container">
+                        <a href="https://www.linkedin.com/in/jack-chen-39739b217/"><img id="linkedin" src="image/in.png"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

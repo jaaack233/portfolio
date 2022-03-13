@@ -1,0 +1,19 @@
+ul {
+    background: orange;
+}
+
+ol {
+    background-color: cornflowerblue;
+}
+
+div {
+    background: rgb(92, 216, 92);
+    width: 70%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.sample {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
