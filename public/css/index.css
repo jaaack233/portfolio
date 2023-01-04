@@ -102,6 +102,7 @@ a {
 }
 
 .project {
+    background-color: #dddddd;
     flex-basis: auto;
     width: calc(50% - 1px);
     height: 405px;
@@ -130,13 +131,16 @@ a {
 }
 
 .project h1{
-    color: white;
+    color: black;
     text-align: left;
     padding-left: 10px;
+    font-weight: 500;
 }
 
 .project h3{
     padding-left: 10px;
+    font-weight: 500;
+    color: rgb(255, 111, 0);
 }
 
 
