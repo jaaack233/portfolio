@@ -107,7 +107,7 @@ a {
     width: calc(50% - 2px);
     height: 405px;
     justify-content: center;
-    border: 1px inset rgb(0, 0, 0);
+    margin: 1px;
     border-radius: 30px;
     transition: 0.5s;
 }
