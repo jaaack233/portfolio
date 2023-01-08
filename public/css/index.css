@@ -48,7 +48,7 @@ a {
 
 .intro {
     height: 900px;
-    border: 0.5px inset black;
+    border: 2px inset black;
     border-radius: 30px;
     width: 40%;
     color: #010B40;
@@ -79,7 +79,7 @@ a {
 .intro img {
     position: absolute;
     width: 70%;
-    height: auto;
+    height: 70%;
     bottom: 0;
     left: -21px;
 }
@@ -88,7 +88,7 @@ a {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 900px;
     width: 60%;
-    border: 0.5px inset black;
+    border: 1px inset black;
     border-radius: 30px;
     background-color: #dddddd;
 }
@@ -104,10 +104,10 @@ a {
 .project {
     background-color: #dddddd;
     flex-basis: auto;
-    width: calc(50% - 1px);
+    width: calc(50% - 2px);
     height: 405px;
     justify-content: center;
-    border: 0.5px inset rgb(0, 0, 0);
+    border: 1px inset rgb(0, 0, 0);
     border-radius: 30px;
     transition: 0.5s;
 }
