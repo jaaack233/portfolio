@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #dddddd;
+    background-color: #F0F1F3;
 
 }
 
@@ -14,16 +14,35 @@ body {
     margin-right: auto;
 }
 
-.navbar {
-    background-color: #dddddd;
-    height: 50px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-top: 20px;
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    transition: 0.5s;
 }
 
-.navbar button{
+main.init{
+    padding: 0;
+}
+
+nav.init{
+    position: absolute;
+    top: -300px;
+}
+
+nav {
+    position: fixed;
+    background-color: #c4c4c4bf;
+    height: 50px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 3;
+    transition: 0.5s;
+}
+
+nav button{
+    border-radius: 10px;
     float: right;
     height: 50px;
     width: 100px;
@@ -34,7 +53,20 @@ body {
     color: #262626;
 }
 
-.navbar button:hover{
+nav img {
+    margin-top: -10px;
+}
+
+.active {
+    background-color: #F26241;
+    color: white;
+}
+
+.active:hover {
+    color: black;
+}
+
+nav button:hover{
     cursor: pointer;
     color: #F26241
 }
@@ -46,24 +78,60 @@ a {
 }
 
 
+.intro.init{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    border: none;
+    border-radius: 0%;
+}
+
 .intro {
-    height: 900px;
+    height: calc(100vh - 150px);
     border: 2px inset black;
     border-radius: 30px;
-    width: 40%;
+    width: 100%;
     color: #010B40;
-    background-color: #dddddd;
+    background-color: #eeeeee;
     position: relative;
+    transition: 0.1s;
+    overflow: hidden;
+}
+
+.intro h1.init {
+    margin-top: 300px;
+    text-align: center;
+}
+
+.intro h2.init {
+    text-align: center;
+}
+
+.intro p.init {
+    text-align: center;
 }
 
 .intro h1{
     font-size: 60px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 20px;
+    margin-right: 20px;
+    text-align: right;
+    transition: 1s;
+}
+
+.intro h2{
+    text-align: right;
+    margin-right: 20px;
+    transition: 1s;
 }
 
 .intro p{
     font-size: 20px;
+    text-align: right;
+    margin-right: 20px;
+    transition: 1s;
 }
 
 #motto {
@@ -73,64 +141,156 @@ a {
     font-size: 70px;
     position: absolute;
     bottom: 0;
-    text-align: center;   
+    text-align: center; 
+    margin-left: 0;
+    padding: 20px;
 }
 
 .intro img {
     position: absolute;
-    width: 60%;
-    height: 70%;
+    width: 400px;
+    height: auto;
     bottom: 0;
-    left: -21px;
+    left: -31px;
+    z-index: 2;
+}
+
+svg {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100vw;
+    z-index: 1;
+}
+
+path {
+    opacity: 0.7;
+}
+
+#w1 {
+    animation: a1 7s;
+    animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+#w2 {
+    animation: a2 7s;
+    animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+#w3 {
+    animation: a3 7s;
+    animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes a1 {
+    0% {
+        d: path("M0 442L25 436.2C50 430.3 100 418.7 150 413.5C200 408.3 250 409.7 300 422.5C350 435.3 400 459.7 450 464.5C500 469.3 550 454.7 600 450.5C650 446.3 700 452.7 750 459.7C800 466.7 850 474.3 875 478.2L900 482L900 601L875 601C850 601 800 601 750 601C700 601 650 601 600 601C550 601 500 601 450 601C400 601 350 601 300 601C250 601 200 601 150 601C100 601 50 601 25 601L0 601Z")
+    }
+
+    50% {
+        d: path("M0 422L25 419.2C50 416.3 100 410.7 150 419.5C200 428.3 250 451.7 300 454C350 456.3 400 437.7 450 434.3C500 431 550 443 600 446.2C650 449.3 700 443.7 750 434.8C800 426 850 414 875 408L900 402L900 601L875 601C850 601 800 601 750 601C700 601 650 601 600 601C550 601 500 601 450 601C400 601 350 601 300 601C250 601 200 601 150 601C100 601 50 601 25 601L0 601Z")
+    }
+
+    100% {
+        d: path("M0 442L25 436.2C50 430.3 100 418.7 150 413.5C200 408.3 250 409.7 300 422.5C350 435.3 400 459.7 450 464.5C500 469.3 550 454.7 600 450.5C650 446.3 700 452.7 750 459.7C800 466.7 850 474.3 875 478.2L900 482L900 601L875 601C850 601 800 601 750 601C700 601 650 601 600 601C550 601 500 601 450 601C400 601 350 601 300 601C250 601 200 601 150 601C100 601 50 601 25 601L0 601Z")
+    }
+
+}
+
+@keyframes a2 {
+    0% {
+        d: path("M0 482L25 488.3C50 494.7 100 507.3 150 511.2C200 515 250 510 300 501.8C350 493.7 400 482.3 450 475.8C500 469.3 550 467.7 600 475.5C650 483.3 700 500.7 750 504.2C800 507.7 850 497.3 875 492.2L900 487L900 601L875 601C850 601 800 601 750 601C700 601 650 601 600 601C550 601 500 601 450 601C400 601 350 601 300 601C250 601 200 601 150 601C100 601 50 601 25 601L0 601Z")
+    }
+
+    50% {
+        d: path("M0 450L25 450.7C50 451.3 100 452.7 150 451.2C200 449.7 250 445.3 300 451.5C350 457.7 400 474.3 450 486.2C500 498 550 505 600 503.7C650 502.3 700 492.7 750 485.7C800 478.7 850 474.3 875 472.2L900 470L900 601L875 601C850 601 800 601 750 601C700 601 650 601 600 601C550 601 500 601 450 601C400 601 350 601 300 601C250 601 200 601 150 601C100 601 50 601 25 601L0 601Z")
+    }
+
+    100% {
+        d: path("M0 482L25 488.3C50 494.7 100 507.3 150 511.2C200 515 250 510 300 501.8C350 493.7 400 482.3 450 475.8C500 469.3 550 467.7 600 475.5C650 483.3 700 500.7 750 504.2C800 507.7 850 497.3 875 492.2L900 487L900 601L875 601C850 601 800 601 750 601C700 601 650 601 600 601C550 601 500 601 450 601C400 601 350 601 300 601C250 601 200 601 150 601C100 601 50 601 25 601L0 601Z")
+    }
+}
+
+@keyframes a3 {
+    0% {
+        d: path("M0 496L25 504.2C50 512.3 100 528.7 150 529.2C200 529.7 250 514.3 300 513.3C350 512.3 400 525.7 450 532.3C500 539 550 539 600 531.8C650 524.7 700 510.3 750 505C800 499.7 850 503.3 875 505.2L900 507L900 601L875 601C850 601 800 601 750 601C700 601 650 601 600 601C550 601 500 601 450 601C400 601 350 601 300 601C250 601 200 601 150 601C100 601 50 601 25 601L0 601Z")
+    }
+
+    50% {
+        d: path("M0 531L25 533.3C50 535.7 100 540.3 150 534.2C200 528 250 511 300 507.8C350 504.7 400 515.3 450 523.8C500 532.3 550 538.7 600 542.7C650 546.7 700 548.3 750 545.8C800 543.3 850 536.7 875 533.3L900 530L900 601L875 601C850 601 800 601 750 601C700 601 650 601 600 601C550 601 500 601 450 601C400 601 350 601 300 601C250 601 200 601 150 601C100 601 50 601 25 601L0 601Z")
+    }
+
+    100% {
+        d: path("M0 496L25 504.2C50 512.3 100 528.7 150 529.2C200 529.7 250 514.3 300 513.3C350 512.3 400 525.7 450 532.3C500 539 550 539 600 531.8C650 524.7 700 510.3 750 505C800 499.7 850 503.3 875 505.2L900 507L900 601L875 601C850 601 800 601 750 601C700 601 650 601 600 601C550 601 500 601 450 601C400 601 350 601 300 601C250 601 200 601 150 601C100 601 50 601 25 601L0 601Z")
+    }
 }
 
 .sec-uiux {
+    display: grid;
+    grid-template-columns: repeat(2,45%);
+    grid-row-gap: 30px;
+    justify-content: space-around;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    height: 900px;
-    width: 60%;
-    border: 1px inset black;
+    padding: 20px 5%;
     border-radius: 30px;
-    background-color: #dddddd;
+    background-color: #F0F1F3;
 }
 
-.footer {
-    background-color: #262626;
+footer {
+    background-color: #132443;
     height: 100px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
+    margin-top: 30px;
 }
 
 .project {
-    background-color: #dddddd;
+    position: relative;
+    background-color: #d3ddf0;
     flex-basis: auto;
-    width: calc(50% - 2px);
     height: 405px;
     justify-content: center;
-    margin: 1px;
-    border-radius: 30px;
+    border-radius: 20px;
     transition: 0.5s;
 }
 
-.project:hover {
-    cursor: pointer;
-    transform: scale(1.03);
-    box-shadow: 0px 5px 10px #262626;
+.p-intro {
+    padding: 0;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
+.front {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    height: 95%;
+    border-radius: 30px;
+}
+
+
 .img-container {
-    padding: 15px;
+    padding: 0;
     border-radius: 30px;
     height: 60%;
 }
 
 
 .project p{
+    color: black;
     padding-left: 10px;
     font-size: 18px;
 }
 
 .project h1{
+    font-size: 40px;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
     text-align: left;
     padding-left: 10px;
@@ -138,6 +298,7 @@ a {
 }
 
 .project h3{
+    font-size: 28px;
     padding-left: 10px;
     font-weight: 500;
     color: rgb(255, 111, 0);
@@ -149,18 +310,25 @@ a {
     height: 100%;
     object-fit: cover;
     transition: 0.3s;
-    border-radius: 30px;
+    border-radius: 20px 20px 0 0;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px #4b4b4b;
 }
 
 
 
 .sec-title {
-    padding-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 60px;
+    margin-bottom: 40px !important;
+    font-weight: 500;
     font-size: 40px;
     color: #010B40;
     text-align: center;
     margin-bottom: 20px;
-    text-shadow: 2px 2px #F26241;
 }
 
 .btn-exp {
@@ -202,9 +370,9 @@ a {
 
     .p-intro {
         padding: 0;
-        width: 95%;
         text-align: center;
         margin-top: 10px;
+        margin-left: 20px;
     }
 
     #venmo {
